@@ -1,0 +1,145 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.profile > * {
+  margin-top: 1em;
+}
+.profile > *:first-child {
+  margin-top: 0;
+}
+
+.intro {
+  color: hsl(var(--clr-accent));
+  font-family: var(--ff-mono);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20, end) infinite;
+}
+
+.name {
+  font-size: 1.4em;
+  color: hsl(var(--clr-grey));
+  font-weight: 700;
+}
+.skill {
+  text-transform: uppercase;
+  color: hsl(var(--clr-light));
+  margin-top: 0.3em;
+}
+
+.subheading {
+  color: hsl(var(--clr-accent) / 0.8);
+  font-size: 1.5em;
+  line-height: 1;
+  display: none;
+  transition: display 2s ease;
+}
+
+.subheading.active {
+  display: block;
+}
+.bio {
+  color: hsl(var(--clr-grey));
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  word-spacing: 1.5px;
+}
+.logoimg {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  /* width: 50px; */
+}
+.logoIcon {
+  width: 50px;
+  margin-right: 20px;
+  filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
+    brightness(91%) contrast(96%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logoIcon {
+    animation: logo-spin infinite 8s linear;
+  }
+}
+.logoIcon:hover {
+  filter: invert(100%) saturate(1%) sepia(100%) hue-rotate(352deg)
+    brightness(102%) contrast(101%);
+}
+
+/* KEYFRAMES */
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    max-height: 80vh;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .profile {
+    flex: 1;
+    margin: 0 15px 0 0;
+  }
+  .profile {
+    font-size: 1.3em;
+  }
+  .intro {
+    font-size: 1em;
+  }
+  .subheading {
+    line-height: 1.2;
+  }
+  .bio {
+    font-size: 0.8em;
+    letter-spacing: 1.3px;
+    word-spacing: 2px;
+    line-height: 1.5;
+  }
+  .projectSnippet {
+    overflow: auto;
+    flex: 1.3;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .profile {
+    font-size: 1.8em;
+  }
+  .name {
+    margin-top: 20px;
+    font-size: 2.2em;
+  }
+  .subheading {
+    font-size: 1.7em;
+    margin-top: 20px;
+  }
+}
