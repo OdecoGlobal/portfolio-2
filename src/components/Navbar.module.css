@@ -59,7 +59,7 @@ nav .logo {
 
 .open .bar:nth-child(1) {
   width: 30px;
-  transform: rotate(-45deg) translate(-5px, 9px);
+  transform: rotate(-45deg) translate(-5px, 8px);
 }
 
 .open .bar:nth-child(2) {
@@ -68,7 +68,7 @@ nav .logo {
 
 .open .bar:nth-child(3) {
   width: 30px;
-  transform: rotate(45deg) translate(-5px, -9px);
+  transform: rotate(45deg) translate(-5px, -8px);
 }
 
 .menu-link {
@@ -77,8 +77,10 @@ nav .logo {
   width: 80%;
   top: 0;
   right: 0;
+  animation: slideout 0.3s;
   transform: translateX(100%);
   transition: 0.3s linear;
+
   background-color: hsl(218, 58%, 16%);
   padding: 40% 100px 0;
   list-style: none;
@@ -89,8 +91,6 @@ nav .logo {
 }
 .menu-link li {
   margin-bottom: 20px;
-
-  /* height: 100%; */
 }
 .menu-link li a {
   color: white;
@@ -99,6 +99,17 @@ nav .logo {
 }
 .menu-link li a:hover {
   color: hsl(var(--clr-accent));
+}
+
+@keyframes slideout {
+  0% {
+    display: none;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
