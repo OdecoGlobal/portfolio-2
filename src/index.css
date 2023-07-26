@@ -46,26 +46,21 @@ p.loading,
 }
 img.loading {
   display: block;
-  max-width: 100%;
-  margin: 200px auto;
-  animation: changecolor 0.5s infinite;
+  width: 50px;
+  margin: 20px auto;
+  animation: spincolor 1s infinite;
 }
 
-@keyframes changecolor {
+@keyframes spincolor {
   0% {
-    filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
-      brightness(91%) contrast(96%);
-    transform: scale(1);
+    transform: rotate(0deg);
   }
-  50% {
-    filter: invert(100%) saturate(1%) sepia(100%) hue-rotate(352deg)
-      brightness(102%) contrast(101%);
-    transform: scale(1.5);
-  }
+
   100% {
     filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
       brightness(91%) contrast(96%);
-    transform: scale(1);
+
+    transform: rotate(360deg);
   }
 }
 
