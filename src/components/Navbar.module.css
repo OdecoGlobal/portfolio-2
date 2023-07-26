@@ -26,7 +26,7 @@ nav .logo {
 }
 
 .logo-name {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: hsl(var(--clr-white));
 }
@@ -42,19 +42,19 @@ nav .logo {
 .bar {
   height: 4px;
   background-color: hsl(var(--clr-accent));
-  margin: 4px 0;
+  margin: 4px 20px 4px 0;
   transition: 0.2s;
 }
 
 .bar:nth-child(1) {
-  width: 55px;
+  width: 50px;
 }
 .bar:nth-child(2) {
-  width: 45px;
+  width: 40px;
 }
 
 .bar:nth-child(3) {
-  width: 35px;
+  width: 30px;
 }
 
 .open .bar:nth-child(1) {
@@ -82,7 +82,7 @@ nav .logo {
   background-color: hsl(218, 58%, 16%);
   padding: 40% 100px 0;
   list-style: none;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .menu-link.open {
   transform: translateX(0);
@@ -110,6 +110,8 @@ nav .logo {
 @media screen and (min-width: 800px) {
   nav.navbar {
     padding: 2em 3em 0;
+    position: sticky;
+    top: 0;
   }
   nav .logo {
     margin-bottom: 20px;

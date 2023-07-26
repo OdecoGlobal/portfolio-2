@@ -69,7 +69,7 @@ export default function Home({ projects, isPending, error }) {
 
         <div className={styles.logoimg}>
           {logoArray.map((icon, i) => (
-            <a href={icon.href} key={i}>
+            <a href={icon.href} key={i} target="_blank">
               <img className={styles.logoIcon} src={icon.src} alt={icon.name} />
             </a>
           ))}

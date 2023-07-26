@@ -1,13 +1,14 @@
 .project_card {
   text-align: center;
   font-size: 1.3rem;
+  margin-bottom: 70px;
 }
 .project_card > * {
   margin-bottom: 30px;
 }
 .title {
   font-size: 1.2em;
-  color: hsl(var(--clr-light));
+  color: hsl(var(--clr-accent));
 }
 .detail {
   text-align: left;
@@ -16,17 +17,17 @@
 }
 hr {
   margin: 0;
+  border: 2.5px solid hsl(var(--clr-accent));
 }
 .built {
-  color: goldenrod;
+  color: hsl(var(--clr-gold));
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 .project_card ul {
   font-family: var(--ff-mono);
-
-  color: hsl(var(--clr-accent));
+  color: hsl(var(--clr-light));
   display: flex;
   justify-content: center;
   list-style: none;
@@ -34,7 +35,6 @@ hr {
   font-size: 1.2em;
   flex-wrap: wrap;
   line-height: 1.5;
-  margin-bottom: 5em;
 }
 .project_card li {
   margin-right: 10px;

@@ -73,6 +73,9 @@ function App() {
         />
         <Route path="/project/:id" element={<ProjectPage />} />
       </Routes>
+      <footer>
+        &copy; <span>Okechukwu Chidera</span>
+      </footer>
     </BrowserRouter>
   );
 }

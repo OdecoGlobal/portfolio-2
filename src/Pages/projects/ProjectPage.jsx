@@ -49,6 +49,10 @@ export default function ProjectPage() {
               <li key={i}>{lang}</li>
             ))}
           </ul>
+
+          <a href={project.link} className="btn-link" target="_blank">
+            View Project
+          </a>
         </div>
       )}
     </section>

@@ -1,22 +1,19 @@
 .home {
   display: flex;
   flex-direction: column;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: 'Open Sans', sans-serif;
 }
 
 .profile > * {
-  margin-top: 1em;
-}
-.profile > *:first-child {
-  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 .intro {
@@ -30,19 +27,19 @@
 
 .name {
   font-size: 1.4em;
+  margin-bottom: 0.3em;
   color: hsl(var(--clr-grey));
   font-weight: 700;
 }
 .skill {
   text-transform: uppercase;
   color: hsl(var(--clr-light));
-  margin-top: 0.3em;
 }
 
 .subheading {
   color: hsl(var(--clr-accent) / 0.8);
   font-size: 1.5em;
-  line-height: 1;
+  line-height: 1.3;
   display: none;
   transition: display 2s ease;
 }
@@ -54,14 +51,13 @@
   color: hsl(var(--clr-grey));
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 1em;
   word-spacing: 1.5px;
 }
 .logoimg {
   display: flex;
   width: fit-content;
   align-items: center;
-  /* width: 50px; */
 }
 .logoIcon {
   width: 50px;
