@@ -40,9 +40,9 @@ nav .logo {
 }
 
 .bar {
-  height: 4px;
+  height: 3px;
   background-color: hsl(var(--clr-accent));
-  margin: 4px 20px 4px 0;
+  margin: 4px 20px 2px 0;
   transition: 0.2s;
 }
 
@@ -59,7 +59,7 @@ nav .logo {
 
 .open .bar:nth-child(1) {
   width: 30px;
-  transform: rotate(-45deg) translate(-5px, 12px);
+  transform: rotate(-45deg) translate(-5px, 9px);
 }
 
 .open .bar:nth-child(2) {
@@ -68,7 +68,7 @@ nav .logo {
 
 .open .bar:nth-child(3) {
   width: 30px;
-  transform: rotate(45deg) translate(-5px, -12px);
+  transform: rotate(45deg) translate(-5px, -9px);
 }
 
 .menu-link {
