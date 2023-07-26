@@ -71,24 +71,6 @@ nav .logo {
   transform: rotate(45deg) translate(-5px, -8px);
 }
 
-.menu-link {
-  position: absolute;
-  height: 100vh;
-  width: 80%;
-  top: 0;
-  right: 0;
-  animation: slideout 0.3s;
-  transform: translateX(100%);
-  transition: 0.3s linear;
-
-  background-color: hsl(218, 58%, 16%);
-  padding: 40% 100px 0;
-  list-style: none;
-  font-size: 1.5em;
-}
-.menu-link.open {
-  transform: translateX(0);
-}
 .menu-link li {
   margin-bottom: 20px;
 }
@@ -101,20 +83,44 @@ nav .logo {
   color: hsl(var(--clr-accent));
 }
 
-@keyframes slideout {
+@keyframes slidein {
   0% {
-    display: none;
     transform: translateX(100%);
   }
   100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideout {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
     transform: translateX(100%);
-    display: none;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   .burger-menu {
     display: flex;
+  }
+  .menu-link {
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    right: 0;
+    animation: slideout 0.5s ease-in-out;
+    display: none;
+    background-color: hsl(218, 58%, 16%);
+    padding: 40% 100px 0;
+    list-style: none;
+    font-size: 1.5em;
+  }
+
+  .menu-link.open {
+    display: block;
+    animation: slidein 0.5s ease-in-out;
   }
 }
 
