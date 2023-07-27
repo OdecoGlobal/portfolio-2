@@ -14,7 +14,6 @@ import './App.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   const [project, setProject] = useState(null);
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState(false);
@@ -23,7 +22,10 @@ function App() {
     setIsOpen(!isOpen);
   };
   const closeNav = () => {
-    if (setIsOpen) setIsOpen(false);
+    if (isOpen) setIsOpen(false);
+  };
+  const transitionEnd = () => {
+    if (!isOpen) setIsOpen(false);
   };
 
   useEffect(() => {
@@ -55,7 +57,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar isOpen={isOpen} toggleMenu={toggleMenu} close={closeNav} />
+      <Navbar
+        isOpen={isOpen}
+        toggleMenu={toggleMenu}
+        close={closeNav}
+        end={transitionEnd}
+      />
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
       <Routes>
         <Route

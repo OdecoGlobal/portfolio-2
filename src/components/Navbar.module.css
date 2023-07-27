@@ -85,7 +85,6 @@ nav .logo {
 
 @keyframes slidein {
   0% {
-    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
@@ -110,8 +109,9 @@ nav .logo {
     width: 80%;
     top: 0;
     right: 0;
-    animation: slideout 0.5s ease-in-out;
-    display: none;
+    /* transform: translateX(100%); */
+    animation: slideout 0.5s ease-in-out forwards;
+    /* transition: transform 0.5s ease-in-out, display 0.5s ease-in-out; */
     background-color: hsl(218, 58%, 16%);
     padding: 40% 100px 0;
     list-style: none;
@@ -120,10 +120,28 @@ nav .logo {
 
   .menu-link.open {
     display: block;
-    animation: slidein 0.5s ease-in-out;
+    /* transform: translateX(0); */
+    animation: slidein 0.5s ease-in-out forwards;
   }
 }
-
+@keyframes slideou {
+  0% {
+    transform: translateX(0);
+    display: block;
+  }
+  100% {
+    transform: translateX(100%);
+    display: none;
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media screen and (min-width: 800px) {
   nav.navbar {
     padding: 2em 3em 0;
