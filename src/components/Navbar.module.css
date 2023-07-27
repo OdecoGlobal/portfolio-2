@@ -7,7 +7,7 @@ nav.navbar {
   background-color: hsl(var(--very-dark));
   justify-content: space-between;
   align-items: center;
-  z-index: 13;
+  z-index: 1;
 }
 a {
   text-decoration: none;
@@ -90,6 +90,7 @@ nav .logo {
 @media screen and (max-width: 780px) {
 nav.navbar{
   position: relative;
+  z-index: 15;
 }
   .burger-menu {
     display: flex;
