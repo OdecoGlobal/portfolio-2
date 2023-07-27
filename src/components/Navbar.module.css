@@ -94,6 +94,7 @@ nav .logo {
     width: 80%;
     top: 0;
     right: -100%;
+    overflow: hidden;
     transition: right 0.3s ease-in-out;
     background-color: hsl(218, 58%, 16%);
     padding: 40% 100px 0;
@@ -103,7 +104,7 @@ nav .logo {
 
   .menu-link.open {
     right: 0;
-    overflow-x: visible;
+    overflow: visible;
   }
 }
 
