@@ -7,7 +7,8 @@ nav.navbar {
   background-color: hsl(var(--very-dark));
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 13;
 }
 a {
@@ -89,7 +90,6 @@ nav .logo {
     display: flex;
   }
   .menu-link {
-    position: fixed;
     height: 100vh;
     width: 80%;
     top: 0;
