@@ -94,8 +94,8 @@ nav .logo {
     width: 80%;
     top: 0;
     right: -100%;
-    overflow: hidden;
-    transition: right 0.3s ease-in-out, overflow 0.3s ease-in-out;
+    visibility: hidden;
+    transition: right 0.3s ease-in-out, vvisibility 0.3s ease-in-out;
     background-color: hsl(218, 58%, 16%);
     padding: 40% 100px 0;
     list-style: none;
@@ -104,7 +104,7 @@ nav .logo {
 
   .menu-link.open {
     right: 0;
-    overflow: visible;
+    visibility: visible;
   }
 }
 
