@@ -85,8 +85,9 @@ nav .logo {
   top: 0;
   right: 0;
   display: none;
-  /*  transform: translateX(100%);
-    
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  /*
     opacity: 0;
     transition: all 0.3s ease-in-out;
   
@@ -95,6 +96,7 @@ nav .logo {
 
 .menu-link.open {
   display: block;
+  animation: slide-nav-in 0.3s ease-in-out;
   /* transform: translateX(0);
     opacity: 1; */
 }
@@ -111,6 +113,16 @@ nav .logo {
   color: hsl(var(--clr-accent));
 }
 
+/* KEYFRAMES */
+@keyframes slide-nav-in {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 780px) {
   .burger-menu {
     display: flex;
@@ -120,8 +132,8 @@ nav .logo {
 @media screen and (min-width: 800px) {
   nav.navbar {
     padding: 2em 3em 0;
-    position: sticky;
-    top: 0;
+    position: static;
+    /* top: 0; */
   }
   nav .logo {
     margin-bottom: 20px;
