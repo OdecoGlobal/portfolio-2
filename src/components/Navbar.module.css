@@ -95,7 +95,8 @@ nav .logo {
     top: 0;
     right: -100%;
     visibility: hidden;
-    transition: right 0.3s ease-in-out, vvisibility 0.3s ease-in-out;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
     background-color: hsl(218, 58%, 16%);
     padding: 40% 100px 0;
     list-style: none;
@@ -105,6 +106,7 @@ nav .logo {
   .menu-link.open {
     right: 0;
     visibility: visible;
+    opacity: 1;
   }
 }
 
