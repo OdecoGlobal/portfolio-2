@@ -9,7 +9,7 @@ nav.navbar {
   align-items: center;
   position: relative;
   z-index: 20;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 a {
   text-decoration: none;
@@ -84,24 +84,6 @@ nav .logo {
   color: hsl(var(--clr-accent));
 }
 
-@keyframes slidein {
-  0% {
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideout {
-  0% {
-    transform: translateX(0);
-    visibility: visible;
-    
-  }
-  100% {
-    transform: translateX(100%);
-    visibility: hidden;
-  }
-}
 
 @media screen and (max-width: 780px) {
   .burger-menu {
