@@ -9,13 +9,13 @@ export default function Navbar({ isOpen, setIsOpen, toggleMenu, close }) {
     return window.matchMedia('(min-width: 800px)').matches;
   };
 
-  const logmess = () => {
+  const setWidth = () => {
     if (isOpen && maxWidth()) {
       setIsOpen(!isOpen);
     }
   };
-  logmess();
-  window.addEventListener('resize', logmess);
+  setWidth();
+  window.addEventListener('resize', setWidth);
 
   return (
     <nav className={styles.navbar}>
