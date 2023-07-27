@@ -144,6 +144,8 @@ nav .logo {
     padding: 0;
     position: static;
     transform: none;
+    visibility: visible;
+    pointer-events: all;
     transition: none;
     width: auto;
     height: 100%;
