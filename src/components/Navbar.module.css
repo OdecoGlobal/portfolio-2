@@ -47,10 +47,10 @@ nav .logo {
 }
 
 .bar:nth-child(1) {
-  width: 50px;
+  width: 40px;
 }
 .bar:nth-child(2) {
-  width: 40px;
+  width: 35px;
 }
 
 .bar:nth-child(3) {
