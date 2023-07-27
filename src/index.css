@@ -42,7 +42,7 @@ body {
   display: none;
 }
 section {
-  width: 85%;
+  max-width: 85%;
   margin: 2em auto 0;
 }
 footer {
