@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 // assets
 import MyLogo from '../assets/MyLogo.svg';
 
-export default function Navbar({ isOpen, toggleMenu, close, end }) {
+export default function Navbar({ isOpen, toggleMenu, close }) {
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.navlogo}>
@@ -30,7 +30,6 @@ export default function Navbar({ isOpen, toggleMenu, close, end }) {
           isOpen ? styles['open'] : styles['closed']
         }`}
         onClick={close}
-        onTransitionEnd={end}
       >
         <li>
           <Link to="/">Home</Link>

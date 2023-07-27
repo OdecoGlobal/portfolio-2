@@ -141,7 +141,6 @@ nav .logo {
     font-size: 1.5em;
     background: transparent;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
   }
   .menu-link li {

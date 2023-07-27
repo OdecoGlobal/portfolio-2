@@ -24,9 +24,9 @@ function App() {
   const closeNav = () => {
     if (isOpen) setIsOpen(false);
   };
-  const transitionEnd = () => {
-    if (!isOpen) setIsOpen(false);
-  };
+  // const transitionEnd = () => {
+  //   if (!isOpen) setIsOpen(false);
+  // };
 
   useEffect(() => {
     setIsPending(true);
@@ -61,7 +61,7 @@ function App() {
         isOpen={isOpen}
         toggleMenu={toggleMenu}
         close={closeNav}
-        end={transitionEnd}
+        // end={transitionEnd}
       />
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
       <Routes>
