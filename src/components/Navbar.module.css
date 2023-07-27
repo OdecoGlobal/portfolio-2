@@ -84,21 +84,22 @@ nav .logo {
   width: 80vw;
   top: 0;
   right: 0;
-  display: none;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-  /*
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-  
-     */
+  /* display: none; */
+  transform: translateX(100%);
+  /* opacity: 0; */
+  visibility: hidden;
+  pointer-events: none;
+  /* transition: transform 0.3s ease-in-out; */
+
+  transition: all 0.3s ease-in;
 }
 
 .menu-link.open {
   display: block;
-  animation: slide-nav-in 0.3s ease-in-out;
-  /* transform: translateX(0);
-    opacity: 1; */
+  /* animation: slide-nav-in 0.3s ease-in-out; */
+  transform: translateX(0);
+  /* opacity: 1; */
+  visibility: visible;
 }
 
 .menu-link li {
