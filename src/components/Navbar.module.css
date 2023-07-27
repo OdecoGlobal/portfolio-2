@@ -95,7 +95,7 @@ nav.navbar{
   .burger-menu {
     display: flex;
   }
-  .menu-link {
+  .menu-link.mobile {
     position: fixed;
     height: 100vh;
     width: 80%;
