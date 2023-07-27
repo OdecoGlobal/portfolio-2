@@ -84,22 +84,13 @@ nav .logo {
   width: 80vw;
   top: 0;
   right: 0;
-  /* display: none; */
+  display: none;
   transform: translateX(100%);
-  /* opacity: 0; */
-  visibility: hidden;
-  pointer-events: none;
-  /* transition: transform 0.3s ease-in-out; */
-
-  transition: all 0.3s ease-in;
 }
 
 .menu-link.open {
   display: block;
-  /* animation: slide-nav-in 0.3s ease-in-out; */
-  transform: translateX(0);
-  /* opacity: 1; */
-  visibility: visible;
+  animation: slide-nav-in 0.3s ease-in-out forwards;
 }
 
 .menu-link li {
@@ -144,8 +135,6 @@ nav .logo {
     padding: 0;
     position: static;
     transform: none;
-    visibility: visible;
-    pointer-events: all;
     transition: none;
     width: auto;
     height: 100%;
