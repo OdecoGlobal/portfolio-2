@@ -33,12 +33,14 @@ nav .logo {
 
 .burger-menu {
   display: none;
-  position: fixed;
-  right: 5%;
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
   z-index: 100;
+}
+.burger-menu.open{
+  position: fixed;
+  right: 5%;
 }
 
 .bar {
