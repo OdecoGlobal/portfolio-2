@@ -119,19 +119,20 @@ nav .logo {
   }
 
   .menu-link.open {
-    display: block;
-    /* transform: translateX(0); */
+    visibility: visible;
     animation: slidein 0.5s ease-in-out forwards;
   }
 }
 @keyframes slideou {
   0% {
     transform: translateX(0);
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
   100% {
     transform: translateX(100%);
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 @keyframes slidein {
