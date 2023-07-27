@@ -108,7 +108,8 @@ nav .logo {
     height: 100vh;
     width: 80%;
     top: 0;
-    right: 100%;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
     background-color: hsl(218, 58%, 16%);
     padding: 40% 100px 0;
     list-style: none;
