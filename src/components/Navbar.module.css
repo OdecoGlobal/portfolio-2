@@ -8,7 +8,6 @@ nav.navbar {
   justify-content: space-between;
   align-items: center;
   z-index: 13;
-  position: relative;
 }
 a {
   text-decoration: none;
@@ -89,6 +88,9 @@ nav .logo {
 
 
 @media screen and (max-width: 780px) {
+nav.navbar{
+  position: relative;
+}
   .burger-menu {
     display: flex;
   }
