@@ -77,11 +77,11 @@ nav .logo {
 .menu-link {
   background-color: hsl(218, 58%, 16%);
   list-style: none;
-  padding: 200px 100px 0;
+  padding: 200px 5em 0;
   font-size: 1.5em;
   position: fixed;
-  height: 100vh;
-  width: 80vw;
+  height: 100%;
+  width: 13em;
   top: 0;
   right: 0;
   display: none;
