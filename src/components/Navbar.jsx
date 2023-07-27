@@ -4,7 +4,19 @@ import styles from './Navbar.module.css';
 // assets
 import MyLogo from '../assets/MyLogo.svg';
 
-export default function Navbar({ isOpen, toggleMenu, close }) {
+export default function Navbar({ isOpen, setIsOpen, toggleMenu, close }) {
+  const maxWidth = () => {
+    return window.matchMedia('(min-width: 800px)').matches;
+  };
+
+  const logmess = () => {
+    if (isOpen && maxWidth()) {
+      setIsOpen(!isOpen);
+    }
+  };
+  logmess();
+  window.addEventListener('resize', logmess);
+
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.navlogo}>
