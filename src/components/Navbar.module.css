@@ -9,7 +9,7 @@ nav.navbar {
   align-items: center;
   position: relative;
   z-index: 20;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
