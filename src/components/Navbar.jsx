@@ -26,9 +26,7 @@ export default function Navbar({ isOpen, toggleMenu, close }) {
       </div>
 
       <ul
-        className={`${styles['menu-link']} ${
-          isOpen ? styles['open'] : styles[mobile]
-        }`}
+        className={`${styles['menu-link']} ${isOpen ? styles['open'] : ''}`}
         onClick={close}
       >
         <li>
