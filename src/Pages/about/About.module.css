@@ -20,7 +20,7 @@
 
 .display-pic {
   position: absolute;
-  top: -15%;
+  top: -12%;
   width: 8.3em;
   height: 8.3em;
   border-radius: 50%;
@@ -37,10 +37,8 @@ span {
 p {
   color: hsl(var(--clr-grey));
   font-size: 1.2em;
-  text-align: justify;
-  /* hyphens: auto; */
   letter-spacing: 1.5px;
-  /* word-break: break-all; */
+  line-height: 1.5;
 }
 
 .about-details {
