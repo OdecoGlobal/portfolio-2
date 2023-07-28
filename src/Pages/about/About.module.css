@@ -38,8 +38,9 @@ p {
   color: hsl(var(--clr-grey));
   font-size: 1.2em;
   text-align: justify;
-  hyphens: auto;
-  word-break: break-all;
+  /* hyphens: auto; */
+  letter-spacing: 1.5px;
+  /* word-break: break-all; */
 }
 
 .about-details {
