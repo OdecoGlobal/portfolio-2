@@ -45,6 +45,14 @@ section {
   max-width: 85%;
   margin: 2em auto 0;
 }
+
+.home,
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
 footer {
   margin: 0 0 30px 25vw;
   font-size: 1.3rem;
@@ -102,6 +110,13 @@ img.loading {
 }
 
 @media screen and (min-width: 800px) {
+  .home,
+  .about {
+    max-height: 80vh;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
   footer {
     margin-left: 40vw;
   }

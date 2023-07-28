@@ -13,7 +13,6 @@
   box-shadow: 0 10px 30px -15px hsl(var(--box-shadow));
   transition: all 0.3s ease;
   padding: 20px 6px 20px 9px;
-  /* padding-right: 10px; */
   border-radius: 5px;
   margin-bottom: 30px;
   font-family: 'Inter' sans-serif;

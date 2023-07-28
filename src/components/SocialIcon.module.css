@@ -1,0 +1,28 @@
+.logoimg {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+.logoIcon {
+  width: 50px;
+  margin-right: 20px;
+  filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
+    brightness(91%) contrast(96%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logoIcon {
+    animation: logo-spin infinite 8s linear;
+  }
+}
+.logoIcon:hover {
+  filter: invert(100%) saturate(1%) sepia(100%) hue-rotate(352deg)
+    brightness(102%) contrast(101%);
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

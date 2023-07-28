@@ -1,9 +1,3 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1em;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -54,26 +48,6 @@
   font-size: 1em;
   word-spacing: 1.5px;
 }
-.logoimg {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-}
-.logoIcon {
-  width: 50px;
-  margin-right: 20px;
-  filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
-    brightness(91%) contrast(96%);
-}
-@media (prefers-reduced-motion: no-preference) {
-  .logoIcon {
-    animation: logo-spin infinite 8s linear;
-  }
-}
-.logoIcon:hover {
-  filter: invert(100%) saturate(1%) sepia(100%) hue-rotate(352deg)
-    brightness(102%) contrast(101%);
-}
 
 /* KEYFRAMES */
 
@@ -86,26 +60,10 @@
   }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media screen and (min-width: 800px) {
-  .home {
-    max-height: 80vh;
-    justify-content: space-between;
-    flex-direction: row;
-  }
   .profile {
     flex: 1;
     margin: 0 15px 0 0;
-  }
-  .profile {
     font-size: 1.3em;
   }
   .intro {
