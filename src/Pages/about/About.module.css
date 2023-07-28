@@ -2,7 +2,7 @@
 .about-details {
   background: hsl(var(--light-navy));
   box-shadow: 0 20px 30px -15px hsl(var(--box-shadow));
-  padding: 0 5px 10px 10px;
+  padding: 20px 7px 20px 12px;
 }
 
 .about_bio {
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 10%;
-  padding: 27% 5px 10px 10px;
+  padding-top: 27%;
 }
 .about_bio > * {
   margin-bottom: 20px;
@@ -36,13 +36,11 @@ span {
 p {
   color: hsl(var(--clr-grey));
   font-size: 1.2em;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   line-height: 1.5;
 }
 
 .about-details {
-  /* padding: 20px 10px 10px 10px; */
-  padding: 20px 6px 20px 9px;
   margin-bottom: 10px;
 }
 .about-details > * {
