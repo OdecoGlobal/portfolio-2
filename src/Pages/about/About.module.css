@@ -24,12 +24,11 @@
   width: 8.3em;
   height: 8.3em;
   border-radius: 50%;
-  margin: 0 auto;
 }
 
 .name {
   color: hsl(var(--clr-light));
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 span {
   color: hsl(var(--clr-accent));
