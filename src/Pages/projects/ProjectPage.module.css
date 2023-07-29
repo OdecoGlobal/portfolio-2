@@ -1,6 +1,6 @@
 .project_card {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 70px;
 }
 .project_card > * {
@@ -11,6 +11,7 @@
   color: hsl(var(--clr-accent));
 }
 .detail {
+  font-size: 1em;
   text-align: left;
   line-height: 1.8;
   color: hsl(var(--clr-white) / 0.8);
