@@ -41,6 +41,10 @@ export default function ProjectPage() {
       {project && (
         <div className={styles.project_card}>
           <h3 className={styles.title}>{project.title}</h3>
+          <p className={styles.detail}>{project.intro}</p>
+          <h4 className={styles.title}>Project Overview</h4>
+
+          <p className={styles.detail}>{project.overview}</p>
           <p className={styles.detail}>{project.details}</p>
           <hr />
           <p className={styles.built}>This Project was built with</p>
