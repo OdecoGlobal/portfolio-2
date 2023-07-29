@@ -9,7 +9,7 @@ export default function ProjectDetails({ projects }) {
           <div className={styles.card}>
             <h3 className={styles.title}>{project.title}</h3>
             <p className={styles.detail}>
-              {project.details.substring(0, 120)} ...
+              {project.intro.substring(0, 170)} ...
             </p>
             <ul>
               {project.stack.map((lang, i) => (
