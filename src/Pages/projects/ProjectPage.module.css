@@ -11,7 +11,7 @@
   color: hsl(var(--clr-accent));
 }
 .detail {
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: left;
   line-height: 1.8;
   color: hsl(var(--clr-white) / 0.8);
@@ -49,8 +49,12 @@ hr {
 
 @media screen and (min-width: 800px) {
   .title {
-    font-size: 3.5em;
+    font-size: 3em;
   }
+  .detail {
+    font-size: 1em;
+  }
+
   .built {
     font-size: 1.2em;
   }
