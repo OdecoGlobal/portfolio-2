@@ -60,9 +60,9 @@ ul.about_tech {
 
 p {
   color: hsl(var(--clr-grey));
-  font-size: 1.2em;
+  font-size: 1em;
   letter-spacing: 1.2px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .about-details {
@@ -72,7 +72,7 @@ p {
   margin-bottom: 10px;
 }
 .heading {
-  font-size: 2em;
+  font-size: 1.5em;
   color: hsl(var(--clr-gold));
   text-align: center;
 }
@@ -87,6 +87,12 @@ p {
     max-height: 100%;
     flex-direction: column;
   }
+  .about_bio {
+    padding-top: 10%;
+    padding-top: 80px;
+
+    margin-bottom: 20px;
+  }
   .btn_about {
     margin-top: 0;
   }
@@ -98,7 +104,7 @@ p {
   }
   .about_bio {
     justify-content: space-between;
-    padding-top: 11%;
+    padding-top: 100px;
     margin-right: 50px;
     font-size: 1.5rem;
     flex: 1;
@@ -117,6 +123,10 @@ p {
   .about_bio p {
     font-size: 0.7em;
   }
+  ul.about_tech {
+    font-size: 0.8em;
+  }
+
   .about-details {
     display: flex;
     flex-direction: column;
