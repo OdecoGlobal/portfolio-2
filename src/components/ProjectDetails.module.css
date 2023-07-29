@@ -7,6 +7,9 @@
   justify-content: space-between;
   flex-direction: column;
 }
+.projectList {
+  margin-top: 0;
+}
 
 .card {
   background-color: hsl(var(--light-navy));
@@ -33,7 +36,7 @@
 }
 .card .detail {
   color: hsl(var(--clr-white) / 0.8);
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 .card ul {
   font-family: var(--ff-mono);
@@ -42,7 +45,7 @@
   align-items: center;
   list-style: none;
   padding: 0 10px;
-  font-size: 1.3em;
+  font-size: 1em;
   flex-wrap: wrap;
   line-height: 1.5;
 }
