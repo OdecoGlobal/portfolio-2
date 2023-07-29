@@ -34,7 +34,7 @@ export default function About() {
         <p>
           I'm a front-end developer who builds responsive web applications with
           HTML, CSS, JavaScript and frameworks such as React. Occasionally, I
-          design websites and graphics even logos too.
+          design graphics, flyers and logos 
         </p>
         <SocialIcon />
       </div>
