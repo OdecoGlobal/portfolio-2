@@ -9,10 +9,9 @@ import styles from './Home.module.css';
 
 export default function Home({ projects, isPending, error }) {
   const mySkills = [
-    `I develop web applications`,
-    `I design web applications`,
-    `I design graphics & logos`,
-    `I'm a Biomedical Scientist`,
+    `I develop web apps`,
+    `I design logos`,
+    `I design graphics `,
   ];
 
   const [skillIndex, setSkillIndex] = useState(0);

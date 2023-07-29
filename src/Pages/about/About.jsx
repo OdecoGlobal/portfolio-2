@@ -4,13 +4,12 @@ import SocialIcon from '../../components/SocialIcon';
 
 export default function About() {
   const techs = [
-    'Figma',
-    'Adobe Photoshop',
-    'Adobe Illustrator',
     'HTML',
     'CSS',
     'JavaScript',
     'React',
+    'Adobe Photoshop',
+    'Adobe Illustrator',
   ];
 
   return (
@@ -53,10 +52,12 @@ export default function About() {
           As a Front End Developer, OdecoGlobal brings websites to life with an
           enchanting blend of code and design. With an innate understanding of
           user experience I can seamlessly merge form and function, transforming
-          mere websites into captivating online experiences. I have the rare
-          ability to turn ideas into compelling visual masterpieces. My
-          portfolio is an ever-expanding gallery of digital art that never fails
-          to mesmerize.
+          mere websites into captivating online experiences.
+        </p>
+        <p>
+          As a Graphic Designeer, I have the rare ability to turn ideas into
+          compelling visual masterpieces. My portfolio is an ever-expanding
+          gallery of digital art that never fails to mesmerize.
         </p>
         <p>
           I'm also a Logo Designer par excellence. Understanding the
