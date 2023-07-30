@@ -10,6 +10,10 @@
   font-size: 1.2em;
   color: hsl(var(--clr-accent));
 }
+h4.title {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
 .detail {
   font-size: 0.8em;
   text-align: left;
@@ -51,6 +55,9 @@ hr {
   .title {
     font-size: 3em;
   }
+  h4.title {
+    font-size: 2em;
+  }
   .detail {
     font-size: 1em;
   }
@@ -64,6 +71,6 @@ hr {
 }
 @media screen and (min-width: 950px) {
   .title {
-    font-size: 5em;
+    font-size: 4em;
   }
 }

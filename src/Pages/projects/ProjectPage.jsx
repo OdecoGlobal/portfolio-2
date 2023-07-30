@@ -45,7 +45,15 @@ export default function ProjectPage() {
           <h4 className={styles.title}>Project Overview</h4>
 
           <p className={styles.detail}>{project.overview}</p>
-          <p className={styles.detail}>{project.details}</p>
+
+          <h4 className={styles.title}>Key Features</h4>
+          <p className={styles.detail}>
+            {project.details.map((detail, i) => (
+              <p className={styles.detail} key={i}>
+                {detail}{' '}
+              </p>
+            ))}
+          </p>
           <hr />
           <p className={styles.built}>This Project was built with</p>
           <ul>
