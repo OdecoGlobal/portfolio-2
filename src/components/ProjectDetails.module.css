@@ -12,6 +12,7 @@
 }
 
 .card {
+  height: fit-content;
   background-color: hsl(var(--light-navy));
   box-shadow: 0 10px 30px -15px hsl(var(--box-shadow));
   transition: all 0.3s ease;
@@ -58,7 +59,6 @@
     margin-top: 0;
   }
   .card {
-    height: 250px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;

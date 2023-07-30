@@ -98,7 +98,6 @@ p {
 @media screen and (min-width: 1024px) {
   .about_me {
     flex-direction: row;
-    max-height: 80vh;
   }
   .about_bio {
     justify-content: space-between;
