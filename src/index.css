@@ -73,7 +73,7 @@ footer span {
   border: 3px solid hsl(var(--clr-gold));
   border-radius: 50px;
   color: hsl(var(--clr-gold));
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 400;
 }
 .btn-link:hover {
@@ -123,6 +123,5 @@ img.loading {
   }
   .btn-link {
     margin: 40px auto 0;
-    height: 50px;
   }
 }

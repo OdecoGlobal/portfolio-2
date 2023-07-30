@@ -80,7 +80,7 @@ p {
 @media screen and (max-width: 800px) {
   .about_bio,
   .about-details {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -102,6 +102,7 @@ p {
   }
   .about_bio {
     justify-content: space-between;
+    align-items: center;
     padding-top: 90px;
     margin-right: 50px;
     font-size: 1.4rem;
@@ -109,7 +110,7 @@ p {
   }
   .about_bio,
   .about-details {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .about_bio .name {
     font-size: 1em;
