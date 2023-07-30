@@ -22,8 +22,8 @@
   position: absolute;
   top: 0;
   transform: translateY(-50%);
-  width: 8.3em;
-  height: 8.3em;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
 }
 
@@ -79,7 +79,7 @@ p {
 
 @media screen and (max-width: 800px) {
   .about_bio {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -88,10 +88,7 @@ p {
     flex-direction: column;
   }
   .about_bio {
-    padding-top: 10%;
     padding-top: 80px;
-
-    margin-bottom: 20px;
   }
   .btn_about {
     margin-top: 0;
