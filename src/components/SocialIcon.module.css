@@ -4,7 +4,7 @@
   align-items: center;
 }
 .logoIcon {
-  width: 50px;
+  width: 35px;
   margin-right: 20px;
   filter: invert(68%) sepia(90%) saturate(367%) hue-rotate(133deg)
     brightness(91%) contrast(96%);

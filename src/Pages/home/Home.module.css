@@ -72,7 +72,7 @@
   }
   .intro {
     font-size: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .subheading {
     line-height: 1.2;
@@ -83,7 +83,7 @@
     letter-spacing: 1.3px;
     word-spacing: 2px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .projectSnippet {
     overflow: auto;
@@ -101,7 +101,7 @@
   .subheading {
     font-size: 1.4em;
   }
-  .bio {
+  /* .bio {
     font-size: 0.5em;
-  }
+  } */
 }
