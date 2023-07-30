@@ -63,12 +63,12 @@ footer span {
 }
 
 .btn-link {
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
   height: 40px;
   border: 3px solid hsl(var(--clr-gold));
   border-radius: 50px;
